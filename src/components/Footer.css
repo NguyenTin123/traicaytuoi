@@ -1,0 +1,29 @@
+.footer {
+  background-color: #4caf50; /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  padding: 1px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Hiệu ứng đổ bóng */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffeb3b; /* Màu vàng khi hover */
+}

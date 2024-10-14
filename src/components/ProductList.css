@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;  /* Thay đổi font chữ toàn bộ trang */
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;  /* Khoảng cách giữa các sản phẩm */
+  }
+  
+  .product-item {
+    flex: 0 1 calc(25% - 16px);  /* 4 sản phẩm mỗi hàng, trừ khoảng cách */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: 200px; /* Cố định chiều cao của ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  }
+  
+  /* Thêm hiệu ứng cho nút Thêm vào giỏ hàng */
+  .product-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-position 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #007bff 0%, #00ff00 100%);
+  }
+  
+  .product-item button:hover {
+    background-position: right center; /* Thay đổi vị trí màu nền */
+  }
+  
+  /* Thêm CSS cho thông báo */
+  .notification {
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000; /* Đảm bảo luôn hiển thị trên cùng */
+  }
+  

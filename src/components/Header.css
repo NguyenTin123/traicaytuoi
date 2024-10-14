@@ -1,0 +1,61 @@
+/* Styling cho phần Header */
+.header {
+  background-color: #4caf50; /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Hiệu ứng đổ bóng */
+  position: sticky; /* Đặt header ở vị trí cố định khi lướt xuống */
+  top: 0; /* Cố định header ở trên cùng */
+  z-index: 1000; /* Đảm bảo header luôn hiển thị trên cùng */
+}
+
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.header .logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .logo a:hover {
+  color: #ffeb3b; /* Màu vàng khi hover */
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #ffeb3b; /* Màu vàng khi hover */
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8em;
+}
